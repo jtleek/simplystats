@@ -1,0 +1,16 @@
+Package: simplystats
+Title: Make simplystats themed plots
+Version: 0.1
+Author: Jeffrey T. Leek <jtleek@gmail.com>
+Description: This package allows people to make plots using the simplystats
+    theme. For now these plots are in base R graphics, because we are old
+    foggies, but eventually we might get around to making a ggplot2 theme (or
+    someone could send us a pull request).
+Depends:
+    R (>= 3.1.1),
+    grid,
+    png,
+    RColorBrewer
+Maintainer: Jeffrey T. Leek <jtleek@gmail.com>
+License: MIT
+LazyData: true
