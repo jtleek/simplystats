@@ -20,7 +20,7 @@ simplyhist = function(...,col=1,logo=TRUE,main="",theme="black"){
   
   hist(...,col=simplycols[col], 
        bty="n",xaxt="n",yaxt="n",main="")
-  add_simplyaxis()
+  add_simplyaxis(...)
   if(logo){add_simply_logo(theme)}
   par(op)
 }

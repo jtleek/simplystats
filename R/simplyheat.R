@@ -31,7 +31,7 @@ simplyheat = function(dat,x=NULL,y=NULL,...,ncol=11,logo=TRUE,theme="black"){
         col=heatcols,
         breaks=quantile(dat,probs),
         bty="n",xaxt="n",yaxt="n",...)
-  add_simplyaxis()
+  add_simplyaxis(...)
   
   image(t(as.matrix(1:length(heatcols))),
         col=heatcols,xaxt="n",yaxt="n")

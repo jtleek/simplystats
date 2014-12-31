@@ -26,6 +26,7 @@ add_simply_logo = function(theme="black"){
 #' A function for adding simplystats themed axes
 #' 
 #' Add axis to plot
+#' 
 
 
 add_simplyaxis = function(){
@@ -34,6 +35,18 @@ add_simplyaxis = function(){
   axis(side=1,at=at1,tick=FALSE)
   axis(side=2,at=at2,tick=FALSE)
 }
+
+#' A function for adding simplystats themed axes
+#' 
+#' Add axis to time series plot
+#' 
+#' 
+
+add_simplyaxis_ts = function(){
+  at2 = axTicks(2)
+  axis(side=2,at=at2,tick=FALSE)
+}
+
 
 
 #' Set the overall plotting parameters for the two simplystats themes

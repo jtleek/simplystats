@@ -13,7 +13,5 @@
 
 simplylines = function(...,col=1){
   simplycols = get_simplycols(col)
-  lines(...,
-         pch=19,col=simplycols[col])
-  par(op)
+  lines(...,col=simplycols[col])
 }
