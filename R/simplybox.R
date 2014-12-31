@@ -29,5 +29,5 @@ simplybox = function(...,col=1,logo=TRUE,theme="black"){
   axis(side=2,at=at2,tick=FALSE)
   
   if(logo){add_simply_logo(theme)}
-  par(op)
+  par(op,new=TRUE)
 }

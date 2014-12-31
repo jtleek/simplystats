@@ -95,3 +95,14 @@ get_simplycols = function(col){
   if(length(unique(col)) <= 3){simplycols = colr(3)}else{simplycols=colr(length(unique(col)))}
   return(simplycols)
 }
+
+#' Add a simplystats legend
+#' 
+#' Colored like simplystats
+#'
+#' @param col Parameters to legend
+
+add_simplylegend = function(...,col=1){
+ simplycols = get_simplycols(col)
+ legend(...,col=simplycols[col],bty="n")
+}

@@ -22,5 +22,5 @@ simplyts = function(...,col=1,pch=19,logo=TRUE,theme="black"){
        bty="n",pch=19,col=simplycols[col],yaxt="n")
   add_simplyaxis_ts()
   if(logo){add_simply_logo(theme)}
-  par(op)
+  par(op,new=TRUE)
 }

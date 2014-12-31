@@ -22,5 +22,5 @@ simplyhist = function(...,col=1,logo=TRUE,main="",theme="black"){
        bty="n",xaxt="n",yaxt="n",main="")
   add_simplyaxis()
   if(logo){add_simply_logo(theme)}
-  par(op)
+  par(op,new=TRUE)
 }

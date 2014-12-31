@@ -23,5 +23,5 @@ simplyplot = function(...,col=1,pch=19,logo=TRUE,theme="black"){
        pch=19,col=simplycols[col])
   add_simplyaxis()
   if(logo){add_simply_logo(theme)}
-  par(op)
+  par(op,new=TRUE)
 }

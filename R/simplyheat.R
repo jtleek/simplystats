@@ -38,5 +38,5 @@ simplyheat = function(dat,x=NULL,y=NULL,...,ncol=11,logo=TRUE,theme="black"){
   axis(2,at=seq(0,1,length=ncol),
        labels=round(quantile(dat,probs),2)[2:(ncol+1)],las=2)
   if(logo){add_simply_logo(theme)}
-  par(op)
+  par(op,new=TRUE)
 }

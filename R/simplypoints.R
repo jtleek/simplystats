@@ -16,5 +16,5 @@ simplypoints = function(...,col=1,pch=19){
   simplycols = get_simplycols(col)
   points(...,
        pch=19,col=simplycols[col])
-  par(op)
+  par(op,new=TRUE)
 }
