@@ -3,6 +3,10 @@
 #' Add the logo in black or white depending on the theme
 #' 
 #' @param theme Options are "black" or "white" 
+#' 
+#' @export
+#' 
+#' 
 
 
 add_simply_logo = function(theme="black"){
@@ -27,6 +31,10 @@ add_simply_logo = function(theme="black"){
 #' 
 #' Add axis to plot
 #' 
+#' 
+#' @export
+#' 
+#' 
 
 
 add_simplyaxis = function(){
@@ -39,6 +47,10 @@ add_simplyaxis = function(){
 #' A function for adding simplystats themed axes
 #' 
 #' Add axis to time series plot
+#' 
+#' 
+#' 
+#' @export
 #' 
 #' 
 
@@ -54,6 +66,10 @@ add_simplyaxis_ts = function(){
 #' The theme can be either black or white. 
 #'
 #' @param theme Options are "black" or "white" 
+#' 
+#' @export
+#' 
+#' 
 
 
 set_simplypar = function(theme="black"){
@@ -87,6 +103,10 @@ set_simplypar = function(theme="black"){
 #' Colors for plots. 
 #'
 #' @param col The numeric color vector input by the user. 
+#' 
+#' @export
+#' 
+#' 
 
 
 get_simplycols = function(col){
@@ -101,6 +121,11 @@ get_simplycols = function(col){
 #' Colored like simplystats
 #'
 #' @param col Parameters to legend
+#' 
+#' @export
+#' 
+#' 
+
 
 add_simplylegend = function(...,col=1){
  simplycols = get_simplycols(col)

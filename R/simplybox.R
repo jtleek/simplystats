@@ -25,7 +25,7 @@ simplybox = function(...,col=1,logo=TRUE,theme="black"){
   grid(nx=NA,ny=NULL)
   stripchart(...,vertical=T,method="jitter",add=TRUE,pch=19,col=pointcol)
   
-  axis(side=1,at=1:length(tmp$names),labels=tmp$names,tick=FALSE)
+  axis(side=1,at=1:length(tmp$names),labels=tmp$names,tick=FALSE,las=2)
   axis(side=2,at=at2,tick=FALSE)
   
   if(logo){add_simply_logo(theme)}
